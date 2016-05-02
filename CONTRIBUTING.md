@@ -13,10 +13,9 @@ In order to protect both you and ourselves, you will need to sign the
 
 ### Guidelines to contribute
 
-Each contribution needs to have a) top level readme explaining what the contribution does, how to use it with gRPC, how to build and test it and what are its external technical dependencies.
-Have at least a top level readme.md describing overview, how to use, dependencies, and how to build and test.
-Third party libraries: Note that no third party libraries with AGPL license etc should not be used in the codebases.
-Automated tests - will have a badge called “Verified” for tested contributions. Contributors should have automated tests present in every contribution and they should run on commit. We (gRPC team) will set up travis CI to facilitate this. Tests must return green before we merge them.
+Each contribution needs to have top level readme explaining what the contribution does, how to use it with gRPC, how to build and test it and what are its external technical dependencies.
+Note that no third party libraries with AGPL license etc should not be used in the codebases.
+Contributors should have automated tests present in every contribution and they should run on commit. We (gRPC team) will set up travis CI to facilitate this. Tests must return green before we merge PRs.
 
 ### How contributions will be accepted?
 
