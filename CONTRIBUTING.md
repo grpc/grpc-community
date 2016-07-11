@@ -1,4 +1,4 @@
-# [gRPC-ecosystem](https://github.com/grpc-ecosystem) is the organization under which we are collecting community contributions around gRPC.
+[gRPC-ecosystem](https://github.com/grpc-ecosystem) is the organization under which we are collecting community contributions around gRPC.
 
 # How to contribute
 
