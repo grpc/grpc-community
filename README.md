@@ -12,3 +12,5 @@
 - [Go Kit with gRPC as transport] (https://github.com/go-kit/kit/tree/master/transport/grpc)
 
 #Issues where we would like help from the community
+- [gRPC core](https://github.com/grpc/grpc/labels/help%20wanted)
+
