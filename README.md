@@ -8,9 +8,10 @@
 - [Polyglot](https://github.com/grpc-ecosystem/polyglot)
 - [Zipkin Support for gRPC](https://github.com/openzipkin/brave/tree/master/brave-grpc)
 - [Prometheus monitoring for gRPC Go](https://github.com/mwitkow/go-grpc-prometheus)
-- [Flatbuffer support for gRPC C++] (https://github.com/google/flatbuffers/tree/master/grpc)
-- [Go Kit with gRPC as transport] (https://github.com/go-kit/kit/tree/master/transport/grpc)
+- [Flatbuffer support for gRPC C++](https://github.com/google/flatbuffers/tree/master/grpc)
+- [Go Kit with gRPC as transport](https://github.com/go-kit/kit/tree/master/transport/grpc)
+- [grpc-java-contrib](https://github.com/salesforce/grpc-java-contrib)
 
-#Issues where we would like help from the community
+# Issues where we would like help from the community
 - [gRPC core](https://github.com/grpc/grpc/labels/help%20wanted)
 
