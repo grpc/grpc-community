@@ -10,6 +10,7 @@
 - [Prometheus monitoring for gRPC Go](https://github.com/mwitkow/go-grpc-prometheus)
 - [Flatbuffer support for gRPC C++](https://github.com/google/flatbuffers/tree/master/grpc)
 - [Go Kit with gRPC as transport](https://github.com/go-kit/kit/tree/master/transport/grpc)
+- [Stackdriver Trace Support for gRPC Go](https://godoc.org/cloud.google.com/go/trace)
 - [grpc-java-contrib](https://github.com/salesforce/grpc-java-contrib)
 - [grpc-errors](https://github.com/avinassh/grpc-errors)
 
