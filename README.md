@@ -13,6 +13,7 @@
 - [Stackdriver Trace Support for gRPC Go](https://godoc.org/cloud.google.com/go/trace)
 - [grpc-java-contrib](https://github.com/salesforce/grpc-java-contrib)
 - [grpc-errors](https://github.com/avinassh/grpc-errors)
+- [grpc-kotlin](https://github.com/rouzwawi/grpc-kotlin)
 
 # Issues where we would like help from the community
 - [gRPC core](https://github.com/grpc/grpc/labels/help%20wanted)
