@@ -1,4 +1,4 @@
-# grpc-contrib
+# grpc-community
 
 [gRPC ecosystem](https://github.com/grpc-ecosystem) is the organization where we are curating repositories of community contributions around gRPC. If you are interested, please submit this [form](https://docs.google.com/a/google.com/forms/d/119zb79XRovQYafE9XKjz9sstwynCWcMpoJwHgZJvK74/edit).
 
