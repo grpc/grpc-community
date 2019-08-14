@@ -1,30 +1,33 @@
-[gRPC-ecosystem](https://github.com/grpc-ecosystem) is the organization under which we are collecting community contributions around gRPC.
+If you are interested in contributing to the gRPC project, below are some general guidelines that apply to all the repositories in gRPC Github organization. Please read the additional instructions in CONTRIBUTING.md file of the concerned repository.
 
-# How to contribute
+## Before You Contribute
 
-This is a place for various components in the gRPC ecosystem that aren't part of the gRPC core. We welcome contributions in this repo which either build extensions around gRPC or showcase how to use gRPC in various use cases and/or with other technologies.
-Here is some guideline and information about how to do so
+We welcome and encourage contributions from the community. Please read the gRPC project [governance](https://github.com/grpc/grpc-community/blob/master/governance.md) document. Contributions should be made via pull requests. Pull requests will be reviewed by one or more maintainers and merged when acceptable. Please read the following guidelines carefully to maximize the chances of your PR being merged.
 
+For contributions not related to gRPC design and implementation but useful to gRPC community, please see gRPC [ecosystem guidelines](https://github.com/grpc/grpc-community/blob/master/grpc_ecosystem.md).
 
-## Getting started
+## Legal Requirements
+In order to protect both you and the gRPC project, you will need to sign the CNCF [Contributor License Agreement](https://identity.linuxfoundation.org/projects/cncf) before your PR can be merged.
 
-### Legal requirements
+## Communication
 
-In order to protect both you and ourselves, you will need to sign the
-[Contributor License Agreement](https://cla.developers.google.com/clas).Also, no third party libraries which are under AGPL etc should not be used.
+Trivial changes and small bug fixes do not need prior communication. You can just submit a PR with minimum details. For larger PRs, we ask that before contributing, please make the effort to coordinate with the maintainers of the project via a Github issue or via [grpcio](https://groups.google.com/forum/#!forum/grpc-io) mailing list. This will prevent you from doing extra or redundant work that may or may not be merged.
 
-### Guidelines to contribute
+## Have Questions?
+It is best to ask questions on forums other than Github repos. Github repos are for filing issues and submitting PRs. You have a higher chance of getting help from the community if you ask your questions on [grpcio](https://groups.google.com/forum/#!forum/grpc-io) mailing list or [Stackoverflow](https://stackoverflow.com/).
 
-gRPC team will control which repos are curated into grpc-ecosystem org and their decision will be final. Contributors will be required to sign [Google CLA](https://cla.developers.google.com/clas) and all license, legal and patent rights will be determined by CLA and [Apache license](http://www.apache.org/licenses/LICENSE-2.0). Work on these will be done in a public manner and each contributing team will have full admin control of their repos. 
+## Guidelines For Pull Requests
 
-Each contribution needs to have a a top level readme explaining what the contribution does, how to use it with gRPC, how to build and test it and what are its external technical dependencies. So each repository should have
+How to get your contributions merged smoothly and quickly.
+* Create smaller PRs that are narrowly focused on addressing a single concern. We often times receive PRs that are trying to fix several things at a time, making the review process difficult. Create more PRs to address different concerns for faster resolution.
+* Make sure to add new tests for bugs in order to catch regressions and to test any newly added functionality.
+* For speculative changes, consider opening an issue and discussing it first. If you are suggesting a behavioral or API change, consider starting with a [gRFC proposal](https://github.com/grpc/proposal).
+* Provide a good PR description as a record of what change is being made and why it was made. Link to a GitHub issue if it exists.
+* Don't fix code style and formatting unless you are already changing that line to address an issue. PRs with irrelevant changes won't be merged. If you do want to fix formatting or style, do that in a separate PR.
+* Unless your PR is trivial, you should expect there will be reviewer comments that you'll need to address before merging. We expect you to be reasonably responsive to those comments, otherwise the PR will be closed after 2-3 weeks of inactivity.
+* If you have non-trivial contributions, please consider adding an entry to the AUTHORS.md file in the concerned repository listing the copyright holder for the contribution (yourself, if you are signing the individual CLA, or your company, for corporate CLAs) in the same PR as your contribution. This needs to be done only once for each company or individual. Please keep this file in alphabetical order.
+* Maintain clean commit history and use meaningful commit messages. PRs with messy commit history are difficult to review and won't be merged. Use rebase -i upstream/master to curate your commit history and/or to bring in latest changes from master but avoid rebasing in the middle of a code review.
+* Keep your PR up to date with upstream/master. If there are merge conflicts, we can't really merge your change.
 
-- Have at least a top level readme.md describing overview, how to use, dependencies, and how to build and test.
-- Third party libraries: Note that no third party libraries with AGPL license etc should not be used in the codebases.
-- Automated tests - will have a badge called “Verified” for tested contributions. Contributors should have automated tests present in every contribution and they should run on commit. We (gRPC team) will set up travis CI to facilitate this. Tests must return green before we merge them.
-
-
-### How contributions will be accepted?
-
-Anyone who wants to contribute a new repo in grpc-ecosystem should fill up this [form](https://docs.google.com/a/google.com/forms/d/119zb79XRovQYafE9XKjz9sstwynCWcMpoJwHgZJvK74/edit). Once gRPC team approves, we will either create a new repo (with license and patents file) for new projects or enable you to move your repo into grpc-ecosystem org. (we do this by making you admin to to grpc-ecosystem-admins org and enabling transfer of repo . Once repo has moved to gRPC ecosystem admins, gRPC team can move it to gRPC-ecosystem and give contributor full admin rights for subsequent control. Code reviews will be done on a best effort basis. It is however expected that the community will address the comments from core team members.
+Above are general guidelines that apply to all the repositories in gRPC Github organization. Please read the additional instructions in CONTRIBUTING.md file of the concerned repository.
 
