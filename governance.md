@@ -1,37 +1,80 @@
-gRPC is open source, and your contributions are welcome! All contributors must sign the [CNCF CLA](https://identity.linuxfoundation.org/projects/cncf). 
+This document describes the governance rules of the gRPC project(organization). It is meant to be followed by all the repositories in the project and the gRPC community.
 
-# Code of Conduct
+## Principles
+
+The gRPC community adheres to the following principles:
+
+* Open: gRPC is open source. See repository guidelines and CLA below.
+* Welcoming and respectful: See Code of Conduct below.
+* Transparent and accessible: Work and collaboration are done in public.
+* Merit: Ideas and contributions are accepted according to their technical merit and alignment with project objectives, scope, and design principles.
+
+## Code Of Conduct
+
 The gRPC community abides by the CNCF [code of conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md). Here is an excerpt:
 
-_As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities._
+*As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.*
 
-As a member of the gRPC project, you represent the project and your fellow contributors.
-We value our community tremendously and we'd like to keep cultivating a friendly and collaborative
-environment for our contributors and users. We want everyone in the community to have
-[positive experiences](https://www.cncf.io/blog/2016/12/14/diversity-scholarship-series-one-software-engineers-unexpected-cloudnativecon-kubecon-experience).
+The gRPC developers and community are expected to follow the values defined in the [CNCF charter](https://www.cncf.io/about/charter/). As a member of the gRPC project, you represent the project and your fellow contributors. We value our community tremendously and we'd like to keep cultivating a friendly and collaborative environment for our contributors and users. We want everyone in the community to have [positive experiences](https://www.cncf.io/blog/2016/12/14/diversity-scholarship-series-one-software-engineers-unexpected-cloudnativecon-kubecon-experience).
 
-# How to Contribute
+## Decision Making And Voting
 
-We welcome all PRs and encourage the community to file issues as needed. Sign the [CNCF CLA](https://identity.linuxfoundation.org/projects/cncf) and then jump in! Look for issues marked as "help wanted"; these are great to get started with. 
-Discussion around project issues and proposals should take place on Github in the associated PR/issue/gRFC. We also encourage use of the [gRPC mailing list](https://groups.google.com/forum/#!forum/grpc-io), as well as our bi-weekly [community calls](https://www.meetup.com/gRPCio/). 
+gRPC is an open-source [project](https://github.com/grpc/)(organization) with an open collaboration philosophy. This means that the Github project is the source of truth for every aspect of the project, including its philosophy, design, road map, and APIs. *If it's part of the project, it's in the repos. If it's in the repos, it's part of the project.*
 
-Non-coding contributions are greatly appreciated! These can include documentation, blog posts, talks, and meetups. 
+As a result, all decisions can be expressed as changes to the repository. An implementation change is a change to the source code. An API change is a change to the API specification. A philosophy change is a change to the philosophy manifesto, and so on.
 
-All gRPC repos are governed by the [master contributing.md](https://github.com/grpc/grpc/blob/master/CONTRIBUTING.md). 
+All decisions affecting gRPC, big and small, follow the same 3 steps:
 
-# Community Meetings
+* Step 1: Open a pull request. Anyone can do this.
+* Step 2: Discuss the pull request. Anyone can do this.
+* Step 3: Maintainers merge or refuse the pull request.
 
-We hold bi-weekly virtual meetings with the community. These provide a platform for discussing project status and the gRPC ecosystem as well as getting assistance with development issues. These meetings take place on Thursdays at 10:00am Pacific. [The meeting agenda](http://bit.ly/grpcmeetings) is owned by the community and you are encouraged to add your topics. 
+In general, we prefer that technical issues and maintainer membership are amicably worked out between the persons involved. If a dispute cannot be decided independently, the maintainers can be called in to resolve the issue by voting. The same PR can be used or a separate PR can be opened in the concerned repository for voting. The title of a PR related to voting should be prefixed with “[vote]”. Such PRs should remain open for a minimum of two weeks unless a decision has been reached sooner. A formal voting on the PR is not required if majority of the maintainers have already agreed in other forums or meetings. In such cases, a detailed comment must be added by a maintainer before approving or rejecting the PR. In such a case, only an existing maintainer can ask for a formal vote to challenge the decision. Each maintainer can cast a maximum of one vote regardless of the number of repositories the maintainer is listed in. A simple majority is required to approve the PR. Only the maintainers listed in MAINTAINERS.md file of the concerned repository may vote on the PR. For cross-repository issues, the PR can be opened in [grpc-community](https://github.com/grpc/grpc-community) or [proposal](https://github.com/grpc/proposal) repositories. The list of maintainers in these repositories is a superset of the list of maintainers in all other repositories in the gRPC Github organization. For ease of maintenance only a few senior maintainers will have write access to grpc-community and proposal repositories.
 
-# Add a New Feature
+## The gRFC Process
 
-We use [gRFCs](https://github.com/grpc/proposal/blob/master/README.md) for any substantial changes to gRPC. This process involves an upfront design that will provide increased visibility to the community. If you're considering a PR that will bring in a new feature across several languages, affect how gRPC is implemented, or may be a breaking change; then you should start with a gRFC. We've got the process documented in [/proposals](https://github.com/grpc/proposal) and have a [template](https://github.com/grpc/proposal/blob/master/GRFC-TEMPLATE.md) for you to get started. 
+We use [gRFCs](https://github.com/grpc/proposal/blob/master/README.md) for any substantial changes to gRPC. This process involves an upfront design that will provide increased visibility to the community. If you're considering a PR that will bring in a new feature across several languages, affect how gRPC is implemented, or may be a breaking change; then you should start with a gRFC. We've got the process documented in [proposal](https://github.com/grpc/proposal) repository and have a [template](https://github.com/grpc/proposal/blob/master/GRFC-TEMPLATE.md) for you to get started.
 
-# Become a Reviewer 
+## How To Contribute
 
-Ready to take this to the next level? Those who have made substantial contributions to the project may be invited to become a project reviewer. Please create an issue in this repo if you are interested. 
+See the general guidelines [here](https://github.com/grpc/grpc-community/blob/master/CONTRIBUTING.md) on how to contribute to gRPC project. If you want to become a maintainer see the section below.
+
+## How To Become A Maintainer
+
+Maintainers (also known as Committers) are first and foremost contributors that have shown they are committed to the long term success of a project. Becoming a maintainer is not required for almost all contributions. In addition to submitting PRs, a maintainer can:
+* Triage issues and PRs filed in the repo and assign appropriate labels and reviewers.
+* Trigger tests and merge PRs once other checks and criteria pass.
+* Cast a vote on issues requiring voting.
+
+Contributors wanting to become maintainers are expected to:
+* Be involved in contributing code, pull request review, triage of issues and addressing user questions in one or more forums such as [Github](https://github.com/grpc), [grpcio](https://groups.google.com/forum/#!forum/grpc-io) mailing list, [Stackoverflow](https://stackoverflow.com/search?q=grpc) and [Gitter](https://gitter.im/grpc/grpc).
+* Maintain sustained contribution to the gRPC project and spend a reasonable amount of time on it.
+* Show deep understanding of the areas contributed to, and good consideration of various reliability, usability, backward compatibility and performance requirements.
+
+These are a few ways to become a maintainer:
+* Create a PR adding yourself to MAINTAINERS.md in the appropriate repository. Before doing so it is a good practice to socialize with some existing maintainers to get a good feel for whether you meet the above criteria. A simple majority vote is required to approve the PR. See above for the voting process.
+* Current maintainers may nominate a contributor and confer maintainer status. A formal voting on the PR is not required if majority maintainers have already agreed in other forums or meetings.
+
+Please note that in order to be part of the organization, your Github account needs to have [two factor security](https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/) enabled.
+
+## Losing Maintainer Status
+
+If a maintainer is no longer interested or cannot perform the maintainer duties listed above, they should volunteer to be moved to emeritus status. If possible, try to complete your work or help find someone to pick up your work before stepping down. If a maintainer has stopped contributing for a reasonable amount of time, other maintainers may propose to move such maintainers to emeritus list without prior notice. The PR for a such as change would serve as the notice. Such a PR should have @mention of the maintainer in question and should remain open for at least a period of two weeks. Any disagreements will be resolved by a vote of the maintainers per the voting process above.
+
+## Adding New Repositories
+
+Similar to adding maintainers, new repositories can be added to gRPC GitHub organization as long as they adhere to the CNCF [charter](https://www.cncf.io/about/charter/) and gRPC governance guidelines. After a project proposal has been announced on a public forum (GitHub issue or mailing list), the existing maintainers have two weeks to discuss the new project, raise objections and cast their vote. Projects must be approved by a majority vote following the process described above. If a project is approved, a maintainer will add the project to the gRPC GitHub organization, and make an announcement on a public forum.
+
+## Handling Security Vulnerabilities
+
+Details on gRPC release process and schedule can be found [here](https://github.com/grpc/grpc/blob/master/doc/grpc_release_schedule.md). Each repository has its own release process. We are in the process of making the release instructions publicly available. Only maintainers can do the releases.
+
+## Releases
+
+Details on gRPC release process and schedule can be found [here](https://github.com/grpc/grpc/blob/master/doc/grpc_release_schedule.md). Each repository has its own release process. We are in the process of making the release instructions publicly available. Only maintainers can do the releases.
+
+## Changes In Governance
+
+Any change in this document must go through the voting process described above.
 
 
-
-
- 
