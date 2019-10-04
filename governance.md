@@ -67,7 +67,7 @@ Similar to adding maintainers, new repositories can be added to gRPC GitHub orga
 
 ## Handling Security Vulnerabilities
 
-Details on gRPC release process and schedule can be found [here](https://github.com/grpc/grpc/blob/master/doc/grpc_release_schedule.md). Each repository has its own release process. We are in the process of making the release instructions publicly available. Only maintainers can do the releases.
+The process for handling any security vulnerabilities or concerns found in gRPC is described [here](https://github.com/grpc/proposal/blob/master/P4-grpc-cve-process.md). This process is known as the gRPC CVE (Common Vulnerabilities and Exposure) process.
 
 ## Releases
 
