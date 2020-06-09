@@ -19,6 +19,7 @@ details [here](https://github.com/grpc/grpc-community/blob/master/grpc_ecosystem
 - [Stackdriver Trace Support for gRPC Go](https://godoc.org/cloud.google.com/go/trace)
 - [grpc-java-contrib](https://github.com/salesforce/grpc-java-contrib)
 - [grpc-errors](https://github.com/avinassh/grpc-errors)
+- [gRPC and Protobuf generator and bindings for Qt framework](https://github.com/semlanik/qtprotobuf)
 
 # Issues where we would like help from the community
 - [gRPC core](https://github.com/grpc/grpc/labels/help%20wanted)
