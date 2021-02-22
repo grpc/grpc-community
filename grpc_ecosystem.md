@@ -1,30 +1,52 @@
-[gRPC-ecosystem](https://github.com/grpc-ecosystem) is the organization under which we are collecting community contributions around gRPC.
+# gRPC Ecosystem
 
-# How to contribute
+The [grpc-ecosystem][] is a GitHub organization that hosts community projects
+related to gRPC -- projects include, but are not limited to, gRPC extensions or
+integrations, as well as examples that demonstrate how to use gRPC for common or
+technically challenging use cases.
 
-This is a place for various components in the gRPC ecosystem that aren't part of the gRPC core. We welcome contributions in this repo which either build extensions around gRPC or showcase how to use gRPC in various use cases and/or with other technologies.
-Here is some guideline and information about how to do so
+## New projects are welcome!
 
+Do you have of a gRPC-related project that’s a good candidate for the ecosystem? Follow the steps outlined below.
 
-## Getting started
+### 1. Requirements
 
-### Legal requirements
+(A) Ensure that your **project** meets the following requirements:
 
-In order to protect both you and ourselves, you will need to sign the
-[Contributor License Agreement](https://cla.developers.google.com/clas).Also, no third party libraries which are under AGPL etc should not be used.
+ 1. Your project is currently hosted in a public repository (usually, GitHub).
+ 1. Your project's license is the [Apache license 2.0][license].
+ 1. Your project doesn't depend on third party libraries with [copyleft][]
+    licenses such as [AGPL][] and [GPL].
+ 1. Your project has a top-level `README.md` with the following information:
+    - Project overview
+    - How gRPC is used
+    - A list of external project dependencies such as third-party libraries
+    - Build instructions
+    - Automated tests and test instructions
 
-### Guidelines to contribute
+(B) Ensure that all **project contributors** have signed Google's [Contributor
+License Agreement][CLA], accepting that all license and patent rights are
+determined by the CLA under the [Apache license][license].
 
-gRPC team will control which repos are curated into grpc-ecosystem org and their decision will be final. Contributors will be required to sign [Google CLA](https://cla.developers.google.com/clas) and all license, legal and patent rights will be determined by CLA and [Apache license](http://www.apache.org/licenses/LICENSE-2.0). Work on these will be done in a public manner and each contributing team will have full admin control of their repos. 
+### 2. Submit a request form
 
-Each contribution needs to have a a top level readme explaining what the contribution does, how to use it with gRPC, how to build and test it and what are its external technical dependencies. So each repository should have
+Once you've addressed all of the requirements listed above, complete and submit
+a [gRPC Ecosystem Project Addition Request Form][form].
 
-- Have at least a top level readme.md describing overview, how to use, dependencies, and how to build and test.
-- Third party libraries: Note that no third party libraries with AGPL license etc should not be used in the codebases.
-- Automated tests - will have a badge called “Verified” for tested contributions. Contributors should have automated tests present in every contribution and they should run on commit. We (gRPC team) will set up travis CI to facilitate this. Tests must return green before we merge them.
+### Project evaluation
 
+The gRPC team will review your request and evaluate your project.
+### Accepted projects
 
-### How contributions will be accepted?
+Once the gRPC team approves your request, the team will either create a new repo
+for your project, or (temporarily) grant you the permissions necessary for you
+to transfer your repo into the [grpc-ecosystem][].
 
-Anyone who wants to contribute a new repo in grpc-ecosystem should fill up this [form](https://docs.google.com/a/google.com/forms/d/119zb79XRovQYafE9XKjz9sstwynCWcMpoJwHgZJvK74/edit). Once gRPC team approves, we will either create a new repo (with license and patents file) for new projects or enable you to move your repo into grpc-ecosystem org. (we do this by making you admin to to grpc-ecosystem-admins org and enabling transfer of repo . Once repo has moved to gRPC ecosystem admins, gRPC team can move it to gRPC-ecosystem and give contributor full admin rights for subsequent control. Code reviews will be done on a best effort basis. It is however expected that the community will address the comments from core team members.
-
+[AGPL]: https://en.wikipedia.org/wiki/Affero_General_Public_License
+[CLA]: https://cla.developers.google.com/clas
+[copyleft]: https://en.wikipedia.org/wiki/Copyleft
+[form]: https://docs.google.com/a/google.com/forms/d/119zb79XRovQYafE9XKjz9sstwynCWcMpoJwHgZJvK74
+[GPL]: https://en.wikipedia.org/wiki/GNU_General_Public_License
+[gRPC ecosystem]: https://github.com/grpc-ecosystem
+[grpc-ecosystem]: https://github.com/grpc-ecosystem
+[license]: http://www.apache.org/licenses/LICENSE-2.0
