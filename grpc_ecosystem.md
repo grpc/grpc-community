@@ -7,7 +7,7 @@ technically challenging use cases.
 
 ## New projects are welcome!
 
-Do you have of a gRPC-related project that’s a good candidate for the ecosystem? Follow the steps outlined below.
+Do you have a gRPC-related project that’s a good candidate for the ecosystem? Follow the steps outlined below.
 
 ### 1. Requirements
 
