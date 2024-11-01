@@ -69,7 +69,7 @@ An Organization Member:
 
 The process for a Contributor to become an Organization Member is as follows:
 
-The official list of Org Members is kept up to date [here](contributors/organization_members.md). Anyone may create a PR to propose the addition of a new Organization Member. With the approval of two existing Organization Members (or higher), the PR must be merged.
+The official list of Org Members is kept up to date [here](contributors/organization_members.md). Anyone may create a PR to propose the addition of a new Organization Member. The PR must have the approval of two existing Organization Members (or higher). If the author of the PR is not the nominee, then the nominee must comment on the PR indicating their support for the new role and its responsibilities. If all of the above conditions are met, the PR must be merged.
 
 ### Lieutenant
 
@@ -118,7 +118,7 @@ Lieutenants have all the rights and responsibilities of an Organization Member, 
     
 The process of becoming a Reviewer is as follows:
 
-The official list of Org Members is kept up to date [here](contributors/lieutenants.md). Anyone may create a PR to propose the addition of a new Lieutenant, specifically naming their area of expertise and which repositories it applies to. With the approval of two existing Lieutenants (or higher), the PR must be merged.
+The official list of Org Members is kept up to date [here](contributors/lieutenants.md). Anyone may create a PR to propose the addition of a new Lieutenant, specifically naming their area of expertise and which repositories it applies to. With the approval of two existing Lieutenants (or higher). These two approvers must have standing within the relevant repository. If the author of the PR is not the nominee, then the nominee must comment on the PR indicating their support for the new role and its responsibilities. If all of the above conditions are met, then the PR must be approved.
 
 ### Maintainer
 
