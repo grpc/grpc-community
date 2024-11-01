@@ -139,14 +139,14 @@ open to anyone.
 
 #### Timeline
 
-Steering Committee elections are held annually. Six weeks or more before the
-election, the Steering Committee will appoint Election Officer(s) (see below).
-Two weeks or more before the election, the Election Officer(s) will issue a
-call for nominations. Three days before the election, the call for nominations
-will be closed. The election will be open for voting not less than two weeks and
-not more than four. The results of the election will be announced within one
-week of closing the election. New Steering Committee members will take office on
-December 16th each year.
+Steering Committee elections are held annually and terms are a year in length.
+Six weeks or more before the election, the Steering Committee will appoint
+Election Officer(s) (see below).  Two weeks or more before the election, the
+Election Officer(s) will issue a call for nominations. Three days before the
+election, the call for nominations will be closed. The election will be open
+for voting not less than two weeks and not more than four. The results of the
+election will be announced within one week of closing the election. New
+Steering Committee members will take office on December 16th each year.
 
 #### Election Officer(s)
 
@@ -169,9 +169,9 @@ gRPC project [Maintainers](contributor_ladder.md#maintainer), as defined by
 official list of Maintainers will be kept up to date in this repository in
 [contributors/maintainers.md](contributors/maintainers.md).
 
-Anyone holding status as a [Maintainer](contributor_ladder.md#maintainer) at or
-before the voting for an election has closed will be able to cast a vote. The
-Election Officer(s_ will make available a voter's guide within this repository.
+Anyone holding status as a [Maintainer](contributor_ladder.md#maintainer) at
+any any point while the voting is open will be able to cast a vote. The
+Election Officer(s) will make available a voter's guide within this repository.
 
 #### Voting Procedure
 

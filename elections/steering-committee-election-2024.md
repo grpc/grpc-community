@@ -3,7 +3,7 @@
 - Election Officer(s):
   - Richard Belleville, [@gnossen](https://github.com/gnossen), [rbellevi@google.com](mailto:rbellevi@google.com)
 - Call for Nominations begins: 2024/11/11
-- Call for Nominations ends: 2024/11/22
+- Call for Nominations Ends: 2024/11/22
 - Voting Opens: 2024/11/25
 - Voting Ends: 2024/12/9
 - Positions Take Effect: 2024/12/16

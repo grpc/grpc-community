@@ -17,7 +17,7 @@ physical permissions within a repository is left to the maintainers for that
 repository, as each repository has different code review and CI/CD workflows
 with different considerations.
 
-The authoritative source for contributor status will be the folowing files housed in this repository:
+The authoritative source for contributor status will be the following files housed in this repository:
 
 - [`contributors/organization_members.md`](contributors/organization_members.md)
 - [`contributors/lieutenants.md`](contributors/lieutenants.md)
