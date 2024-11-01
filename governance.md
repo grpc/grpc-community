@@ -131,7 +131,9 @@ you would like attention from the steering committee.
 ### Composition
 
 The steering committee has 7 seats. These seats are
-open to anyone.
+open to anyone. While anyone may nominate anyone else, the nominee must
+provide consent and attest their commitment to the responsibilities that the
+position entails.
 
 ### Election Procedure
 
