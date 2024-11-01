@@ -116,7 +116,7 @@ Lieutenants have all the rights and responsibilities of an Organization Member, 
     * Has permissions to approve pull requests relating to their area of expertise
     * Can recommend and review other contributors to become Lieutenants
     
-The process of becoming a Reviewer is as follows:
+The process of becoming a Lieutenant is as follows:
 
 The official list of Org Members is kept up to date [here](contributors/lieutenants.md). Anyone may create a PR to propose the addition of a new Lieutenant, specifically naming their area of expertise and which repositories it applies to. With the approval of two existing Lieutenants (or higher). These two approvers must have standing within the relevant repository. If the author of the PR is not the nominee, then the nominee must comment on the PR indicating their support for the new role and its responsibilities. If all of the above conditions are met, then the PR must be approved.
 
@@ -164,7 +164,7 @@ Maintainer for C++, Go, Java, etc. should be added to the review by the triaging
 Maintainer.
 
 Process of becoming a maintainer:
-1. Any current Maintainer may nominate a current Reviewer to become a new Maintainer, by opening a PR to [maintainers.md](contributors/maintainers.md).
+1. Any current Maintainer may nominate a current Lieutenant to become a new Maintainer, by opening a PR to [maintainers.md](contributors/maintainers.md).
 2. The nominee will add a comment to the PR testifying that they agree to all requirements of becoming a Maintainer.
 3. A majority of the current Maintainers (as listed in [maintainers.md](contributors/maintainers.md)) must then approve the PR.
 
