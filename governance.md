@@ -72,7 +72,6 @@ Any change in this document must go through the voting process described above.
 The following responsibilities and powers belong to the Steering Committee:
 
 * Define, evolve, and defend the vision, mission and the values of the project.
-  group.
 * Request funds and other support from the CNCF (e.g. marketing, press, etc.)
 * Coordinate with the CNCF regarding usage of the gRPC brand and deciding
   project scope, core requirements, and conformance, as well as how that brand
