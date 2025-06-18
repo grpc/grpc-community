@@ -2,9 +2,9 @@ If you are interested in contributing to the gRPC project, below are some genera
 
 ## Before You Contribute
 
-We welcome and encourage contributions from the community. Please read the gRPC project [governance](https://github.com/grpc/grpc-community/blob/master/governance.md) document. Contributions should be made via pull requests. Pull requests will be reviewed by one or more maintainers and merged when acceptable. Please read the following guidelines carefully to maximize the chances of your PR being merged.
+We welcome and encourage contributions from the community. Please read the gRPC project [governance](https://github.com/grpc/grpc-community/blob/main/governance.md) document. Contributions should be made via pull requests. Pull requests will be reviewed by one or more maintainers and merged when acceptable. Please read the following guidelines carefully to maximize the chances of your PR being merged.
 
-For contributions not related to gRPC design and implementation but useful to gRPC community, please see gRPC [ecosystem guidelines](https://github.com/grpc/grpc-community/blob/master/grpc_ecosystem.md).
+For contributions not related to gRPC design and implementation but useful to gRPC community, please see gRPC [ecosystem guidelines](https://github.com/grpc/grpc-community/blob/main/grpc_ecosystem.md).
 
 ## Legal Requirements
 In order to protect both you and the gRPC project, you will need to sign the CNCF [Contributor License Agreement](https://identity.linuxfoundation.org/projects/cncf) before your PR can be merged.
