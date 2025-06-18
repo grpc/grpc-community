@@ -67,7 +67,7 @@ Similar to adding maintainers, new repositories can be added to gRPC GitHub orga
 
 ## Handling Security Vulnerabilities
 
-The process for handling any security vulnerabilities or concerns found in gRPC is described [here](https://github.com/grpc/proposal/blob/master/P4-grpc-cve-process.md). This process is known as the gRPC CVE (Common Vulnerabilities and Exposure) process.
+There is a process for handling any security vulnerabilities or concerns found in gRPC. This process is known as the [gRPC CVE (Common Vulnerabilities and Exposure) process](https://github.com/grpc/proposal/blob/master/P4-grpc-cve-process.md).
 
 ## Releases
 
