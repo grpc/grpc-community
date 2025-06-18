@@ -26,8 +26,8 @@ How to get your contributions merged smoothly and quickly.
 * Don't fix code style and formatting unless you are already changing that line to address an issue. PRs with irrelevant changes won't be merged. If you do want to fix formatting or style, do that in a separate PR.
 * Unless your PR is trivial, you should expect there will be reviewer comments that you'll need to address before merging. We expect you to be reasonably responsive to those comments; otherwise, the PR will be closed after 2-3 weeks of inactivity.
 * If you have non-trivial contributions, please consider adding an entry to the AUTHORS.md file in the concerned repository listing the copyright holder for the contribution (yourself, if you are signing the individual CLA, or your company, for corporate CLAs) in the same PR as your contribution. This needs to be done only once for each company or individual. Please keep this file in alphabetical order.
-* Maintain clean commit history and use meaningful commit messages. PRs with messy commit history are difficult to review and won't be merged. Use rebase -i upstream/master to curate your commit history and/or to bring in latest changes from master but avoid rebasing in the middle of a code review.
-* Keep your PR up to date with upstream/master. If there are merge conflicts, we can't really merge your change.
+* Maintain clean commit history and use meaningful commit messages. PRs with messy commit history are difficult to review and won't be merged. Use `git rebase -i upstream/master` or `git rebase -i upstream/main` to curate your commit history and/or to bring in latest changes from `master`/`main` but avoid rebasing in the middle of a code review.
+* Keep your PR up to date with `upstream/master`/`upstream/main`. If there are merge conflicts, we can't really merge your change.
 
 Above are general guidelines that apply to all the repositories in gRPC GitHub organization. Please read the additional instructions in CONTRIBUTING.md file of the concerned repository.
 
