@@ -71,7 +71,7 @@ There is a process for handling any security vulnerabilities or concerns found i
 
 ## Releases
 
-Details on gRPC release process and schedule can be found [here](https://github.com/grpc/grpc/blob/master/doc/grpc_release_schedule.md). Each repository has its own release process. We are in the process of making the release instructions publicly available. Only maintainers can do the releases.
+See the [gRPC release process and schedule](https://github.com/grpc/grpc/blob/master/doc/grpc_release_schedule.md). Each repository has its own release process. We are in the process of making the release instructions publicly available. Only maintainers can do the releases.
 
 ## Changes In Governance
 
