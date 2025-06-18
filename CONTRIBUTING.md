@@ -1,4 +1,4 @@
-If you are interested in contributing to the gRPC project, below are some general guidelines that apply to all the repositories in gRPC Github organization. Please read the additional instructions in CONTRIBUTING.md file of the concerned repository.
+If you are interested in contributing to the gRPC project, below are some general guidelines that apply to all the repositories in gRPC GitHub organization. Please read the additional instructions in CONTRIBUTING.md file of the concerned repository.
 
 ## Before You Contribute
 
@@ -11,10 +11,10 @@ In order to protect both you and the gRPC project, you will need to sign the CNC
 
 ## Communication
 
-Trivial changes and small bug fixes do not need prior communication. You can just submit a PR with minimum details. For larger PRs, we ask that before contributing, please make the effort to coordinate with the maintainers of the project via a Github issue or via [grpcio](https://groups.google.com/forum/#!forum/grpc-io) mailing list. This will prevent you from doing extra or redundant work that may or may not be merged.
+Trivial changes and small bug fixes do not need prior communication. You can just submit a PR with minimum details. For larger PRs, we ask that before contributing, please make the effort to coordinate with the maintainers of the project via a GitHub issue or via [grpcio](https://groups.google.com/forum/#!forum/grpc-io) mailing list. This will prevent you from doing extra or redundant work that may or may not be merged.
 
 ## Have Questions?
-It is best to ask questions on forums other than Github repos. Github repos are for filing issues and submitting PRs. You have a higher chance of getting help from the community if you ask your questions on [grpcio](https://groups.google.com/forum/#!forum/grpc-io) mailing list or [Stackoverflow](https://stackoverflow.com/).
+It is best to ask questions on forums other than GitHub repos. GitHub repos are for filing issues and submitting PRs. You have a higher chance of getting help from the community if you ask your questions on [grpcio](https://groups.google.com/forum/#!forum/grpc-io) mailing list or [Stackoverflow](https://stackoverflow.com/).
 
 ## Guidelines For Pull Requests
 
@@ -29,5 +29,5 @@ How to get your contributions merged smoothly and quickly.
 * Maintain clean commit history and use meaningful commit messages. PRs with messy commit history are difficult to review and won't be merged. Use rebase -i upstream/master to curate your commit history and/or to bring in latest changes from master but avoid rebasing in the middle of a code review.
 * Keep your PR up to date with upstream/master. If there are merge conflicts, we can't really merge your change.
 
-Above are general guidelines that apply to all the repositories in gRPC Github organization. Please read the additional instructions in CONTRIBUTING.md file of the concerned repository.
+Above are general guidelines that apply to all the repositories in gRPC GitHub organization. Please read the additional instructions in CONTRIBUTING.md file of the concerned repository.
 
