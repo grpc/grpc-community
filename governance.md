@@ -37,7 +37,7 @@ We use [gRFCs](https://github.com/grpc/proposal/blob/master/README.md) for any s
 
 ## How To Contribute
 
-See the general guidelines [here](https://github.com/grpc/grpc-community/blob/master/CONTRIBUTING.md) on how to contribute to gRPC project. If you want to become a maintainer see the section below.
+See the [general guidelines](https://github.com/grpc/grpc-community/blob/master/CONTRIBUTING.md) on how to contribute to gRPC project. If you want to become a maintainer see the section below.
 
 ## How To Become A Maintainer
 
