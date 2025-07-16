@@ -11,7 +11,6 @@ sorted alphabetically by first name.
 | Craig Tiller | [ctiller](https://github.com/ctiller) | C++ | [grpc](https://github.com/grpc/grpc) | Google |
 | Doug Fawley | [dfawley](https://github.com/dfawley) | Go | [grpc-go](https://github.com/grpc/grpc-go) | Google |
 | Eric Anderson | [ejona86](https://github.com/ejona86) | Java | [grpc-java](https://github.com/grpc/grpc-java) | Google |
-| Esun Kim | [veblush](https://github.com/veblush) | C++ | [grpc](https://github.com/grpc/grpc) | Google |
 | George Barnett | [glbrntt](https://github.com/glbrntt) | Swift | [grpc-swift](https://github.com/grpc/grpc-swift) | Apple |
 | James Newton-King | [JamesNK](https://github.com/JamesNK) | .Net | [grpc-dotnet](https://github.com/grpc/grpc-dotnet) | Microsoft |
 | Jung-Yu (Gina) Yeh | [ginayeh](https://github.com/ginayeh) | Go | [grpc-go](https://github.com/grpc/grpc-go) | Google |
