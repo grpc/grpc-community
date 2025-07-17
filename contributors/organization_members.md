@@ -50,6 +50,7 @@ are considered Organization Members as well.
 | Siddharth Nohria | [siddharthnohria](https://github.com/siddharthnohria) | Google |
 | Sigurd Meldgaard | [sigurdm](https://github.com/sigurdm) | Google |
 | Soheil Yeganeh | [soheilhy](https://github.com/soheilhy) | Google |
+| Sreenithi Sridharan | [sreenithi](https://github.com/sreenithi) | Google |
 | Vindhya Ningegowda | [dnvindhya](https://github.com/dnvindhya) | Google |
 | Vishal Powar | [vishalpowar](https://github.com/vishalpowar) | Google |
 | Yijie Ma | [yijiem](https://github.com/yijiem) | Google |
