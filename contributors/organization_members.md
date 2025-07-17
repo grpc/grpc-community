@@ -26,8 +26,6 @@ are considered Organization Members as well.
 | David Klempner | [dklempner](https://github.com/dklempner) | Google |
 | Eshita Chandwani | [eshitachandwani](https://github.com/eshitachandwani) | Google |
 | Eugene Ostroukhov | [eugeneo](https://github.com/eugeneo) | Google |
-| Guantao Liu | [guantaol](https://github.com/guantaol) | Google |
-| Hope Casey-Allen | [hcaseyal](https://github.com/hcaseyal) | Google |
 | James Ward | [jamesward](https://github.com/jamesward) | AWS |
 | John Cormie | [jdcormie](https://github.com/jdcormie) | Google |
 | Junhua Yan | [juneyan](https://github.com/juneyan) | Google |
