@@ -9,7 +9,6 @@ are considered Organization Members as well.
 | Name | Github Handle | Employer |
 |--|--|--|
 | Aditya Mandaleeka | [adityamandaleeka](https://github.com/adityamandaleeka) | Microsoft |
-| Akshit Patel | [ac-patel](https://github.com/ac-patel) | Google |
 | Andrew Casey | [amcasey](https://github.com/amcasey) | Microsoft |
 | Anirudh Ramachandra | [anicr7](https://github.com/anicr7) | Google |
 | April Kyle Nassi | [thisisnotapril](https://github.com/thisisnotapril) | Google |
