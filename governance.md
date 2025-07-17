@@ -32,7 +32,7 @@ All decisions affecting gRPC, big and small, follow the same 3 steps:
 
 * Step 1: Open a pull request. Anyone can do this.
 * Step 2: Discuss the pull request. Anyone can do this.
-* Step 3: [Maintainers](contributor_ladder.md#maintainer) merge or refuse the pull request.
+* Step 3: [Maintainers](contributor_ladder.md#maintainer) accept or refuse the pull request.
 
 Exceptions to this are made for:
 
@@ -61,7 +61,7 @@ The process for handling any security vulnerabilities or concerns found in gRPC 
 
 ## Releases
 
-Details on gRPC release process and schedule can be found [here](https://github.com/grpc/grpc/blob/master/doc/grpc_release_schedule.md). Each repository has its own release process. We are in the process of making the release instructions publicly available. Only maintainers can do the releases.
+Details on gRPC release process and schedule can be found [here](https://github.com/grpc/grpc/blob/master/doc/grpc_release_schedule.md). Each repository has its own release process. We are in the process of making the release instructions publicly available. Only Maintainers have the right to do releases, but the duty may be delegated.
 
 ## Changes In Governance
 
