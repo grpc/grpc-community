@@ -4,8 +4,8 @@
 This is the authoritative listing of
 [Core Contributors](../contributor_ladder.md#core_contributor) within the gRPC project,
 sorted alphabetically by first name. In addition to all of the individuals
-listed here, all [Maintainers](maintainers.md) are considered Organization
-Members as well.
+listed here, all [Maintainers](maintainers.md) are considered Core Contributors
+as well.
 
 
 | Name | Github Handle | Area(s) of Expertise | Repo(s) | Employer | 
