@@ -10,7 +10,7 @@ Members as well.
 
 | Name | Github Handle | Area(s) of Expertise | Repo(s) | Employer | 
 |--|--|--|--|--|
-| AJ Heller | [drfloob](https://github.com/drfloob) | Core/C++, EventEngine | [grpc](https://github.com/grpc/grpc) | Google | 
+| Adam Heller | [drfloob](https://github.com/drfloob) | Core/C++, EventEngine | [grpc](https://github.com/grpc/grpc) | Google |
 | Akshit Patel | [ac-patel](https://github.com/ac-patel) | Core/C++ | [grpc](https://github.com/grpc/grpc) | Google |
 | Alex Polcyn | [apolcyn](https://github.com/apolcyn) | Ruby | [grpc](https://github.com/grpc/grpc) | Google | 
 | Alisha Nanda | [ananda1066](https://github.com/ananda1066) | Core/C++ | [grpc](https://github.com/grpc/grpc) | Google |
