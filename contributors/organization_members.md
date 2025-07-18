@@ -12,7 +12,6 @@ are considered Organization Members as well.
 | Andrew Casey | [amcasey](https://github.com/amcasey) | Microsoft |
 | Anirudh Ramachandra | [anicr7](https://github.com/anicr7) | Google |
 | April Kyle Nassi | [thisisnotapril](https://github.com/thisisnotapril) | Google |
-| Arjan Bal | [arjan-bal](https://github.com/arjan-bal) | Google |
 | Arjun Roy | [arjunroy](https://github.com/arjunroy) | Google |
 | Arvind Bright | [arvindbr8](https://github.com/arvindbr8) | Google |
 | Ashley Zhang | [ashzhang](https://github.com/ashzhang) | Google |
@@ -35,7 +34,6 @@ are considered Organization Members as well.
 | Michael Thomsen | [mit-mit](https://github.com/mit-mit) | Google |
 | MV Shiva Prasad | [shivaspeaks](https://github.com/shivaspeaks) | Google |
 | Nana Pang | [nanahpang](https://github.com/nanahpang) | Google |
-| Pawan Bhardwaj | [pawbhard](https://github.com/pawbhard) | Google |
 | Pau Freixes | [pfreixes](https://github.com/pfreixes) | GitHub |
 | Pranjali Saxena | [pranjali-2501](https://github.com/pranjali-2501) | Google |
 | Priyaranjan Jha | [prj2223](https://github.com/prj2223) | Google |

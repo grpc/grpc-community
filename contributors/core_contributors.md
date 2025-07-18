@@ -14,6 +14,7 @@ as well.
 | Akshit Patel | [ac-patel](https://github.com/ac-patel) | Core/C++ | [grpc](https://github.com/grpc/grpc) | Google |
 | Alex Polcyn | [apolcyn](https://github.com/apolcyn) | Ruby | [grpc](https://github.com/grpc/grpc) | Google | 
 | Alisha Nanda | [ananda1066](https://github.com/ananda1066) | Core/C++ | [grpc](https://github.com/grpc/grpc) | Google |
+| Arjan Bal | [arjan-bal](https://github.com/arjan-bal) | Go | [grpc-go](https://github.com/grpc/grpc-go) | Google |
 | Daniel Liu | [danielzhaotongliu](https://github.com/danielzhaotongliu) | Core/C++ | [grpc](https://github.com/grpc/grpc) | Google |
 | Easwar Swaminathan | [easwars](https://github.com/easwars) | xDS (Golang) | [grpc-go](https://github.com/grpc/grpc-go) | Google | 
 | Eryu Xia | [sampajano](https://github.com/sampajano) | iOS | [grpc](https://github.com/grpc/grpc) | Google | 
@@ -26,6 +27,7 @@ as well.
 | Matthew Stevenson | [matthewstevenson88](https://github.com/matthewstevenson88) | Security (cross-language) | [grpc](https://github.com/grpc/grpc), [grpc-go](https://github.com/grpc/grpc-go), [grpc-java](https://github.com/grpc/grpc-java) | Google |
 | Patrice Chalin | [chalin](https://github.com/chalin) | grpc.io | [grpc.io](https://github.com/grpc/grpc.io) | CNCF |
 | Paulo Castello da Costa | [paulosjca](https://github.com/paulosjca) | Benchmarking | [test-infra](https://github.com/grpc/test-infra) | Google |
+| Pawan Bhardwaj | [pawbhard](https://github.com/pawbhard) | Core/C++ | [grpc](https://github.com/grpc/grpc) | Google |
 | Sergii Tkachenko | [sergiitk](https://github.com/sergiitk) | Python, xDS Interop | [grpc](https://github.com/grpc/grpc), [psm-interop](https://github.com/grpc/psm-interop) | Google |
 | Stanley Cheung | [stanley-cheung](https://github.com/stanley-cheung) | PHP | [grpc](https://github.com/grpc/grpc) | Google | 
 | Terry Wilson | [temawi](https://github.com/temawi) | Android | [grpc-java](https://github.com/grpc/grpc-java) | Google | 
