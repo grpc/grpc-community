@@ -24,7 +24,7 @@ same PR as the initial commit of this document.
 
 | Name | Github Handle | Employer | Rationale Link (Optional) |
 |--|--|--|--|
-
+| Antoine Tollenaere | [atollena](https://github.com/atollena) | Datadog | |
 
 ## Procedure
 
