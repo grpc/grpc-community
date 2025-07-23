@@ -26,6 +26,7 @@ same PR as the initial commit of this document.
 |--|--|--|--|
 | Mark Roth | [markdroth](https://github.com/markdroth) | Google | |
 | Antoine Tollenaere | [atollena](https://github.com/atollena) | Datadog | |
+| Jung-Yu (Gina) Yeh | [ginayeh](https://github.com/ginayeh) | Google | |
 
 ## Procedure
 
