@@ -21,6 +21,7 @@ as well.
 | Gregory Cooke | [gtcooke94](https://github.com/gtcooke94) | Security (cross-language) | [grpc](https://github.com/grpc/grpc), [grpc-go](https://github.com/grpc/grpc-go), [grpc-java](https://github.com/grpc/grpc-java) | Google |
 | Gus Cairo | [gjcairo](https://github.com/gjcairo) | Swift | [grpc-swift](https://github.com/grpc/grpc-swift) | Apple |
 | Ivy (Yifei) Zhuang | [yifeizhuang](https://github.com/yifeizhuang) | Java | [grpc-java](https://github.com/grpc/grpc-java) | Google | 
+| John Cormie | [jdcormie](https://github.com/jdcormie) | Android Binder | [grpc-java](https://github.com/grpc/grpc-java) | Google |
 | Kannan Jayprakasam | [kannanjgithub](https://github.com/kannanjgithub) | Java, xDS Interop | [grpc-java](https://github.com/grpc/grpc-java), [psm-interop](https://github.com/grpc/psm-interop) | Google |
 | Lucio Franco | [LucioFranco](https://github.com/LucioFranco) | Rust | [hyperium/tonic](https://github.com/hyperium/tonic) | Turso | 
 | Luwei Ge | [rockspore](https://github.com/rockspore) | Security (cross-language) | [grpc](https://github.com/grpc/grpc), [grpc-go](https://github.com/grpc/grpc-go), [grpc-java](https://github.com/grpc/grpc-java) | Google |
