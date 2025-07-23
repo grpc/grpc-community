@@ -26,7 +26,6 @@ are considered Organization Members as well.
 | Eshita Chandwani | [eshitachandwani](https://github.com/eshitachandwani) | Google |
 | Eugene Ostroukhov | [eugeneo](https://github.com/eugeneo) | Google |
 | James Ward | [jamesward](https://github.com/jamesward) | AWS |
-| John Cormie | [jdcormie](https://github.com/jdcormie) | Google |
 | Junhua Yan | [juneyan](https://github.com/juneyan) | Google |
 | Louis Wasserman | [lowasser](https://github.com/lowasser) | Google |
 | Marc Gravell | [mgravell](https://github.com/mgravell) | Microsoft |
