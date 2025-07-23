@@ -24,6 +24,7 @@ same PR as the initial commit of this document.
 
 | Name | Github Handle | Employer | Rationale Link (Optional) |
 |--|--|--|--|
+| Kevin Nilson | [kevinnilson](https://github.com/kevinnilson) | Google | |
 
 
 ## Procedure
