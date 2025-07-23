@@ -25,7 +25,7 @@ same PR as the initial commit of this document.
 | Name | Github Handle | Employer | Rationale Link (Optional) |
 |--|--|--|--|
 | Mark Roth | [markdroth](https://github.com/markdroth) | Google | |
-
+| Antoine Tollenaere | [atollena](https://github.com/atollena) | Datadog | |
 
 ## Procedure
 
