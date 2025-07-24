@@ -9,7 +9,7 @@ import (
 // A row-major square matrix representing a match-up between two or more candidates.
 type MatchupMatrix = [][]int
 
-func NewMatchupMatrix(candidateCount int) MatchupMatrix {
+func newMatchupMatrix(candidateCount int) MatchupMatrix {
 	var m MatchupMatrix
 	for i := 0; i < candidateCount; i++ {
 		var row []int
@@ -22,12 +22,12 @@ func NewMatchupMatrix(candidateCount int) MatchupMatrix {
 	return m
 }
 
-func AddMatrices(a, b MatchupMatrix) MatchupMatrix {
+func addMatrices(a, b MatchupMatrix) MatchupMatrix {
 	if len(a) != len(b) {
 		// We use panic here because this represents a programmer error, not a user error.
 		panic(fmt.Sprintf("incompatible matrices with row counts %d and %d", len(a), len(b)))
 	}
-	c := NewMatchupMatrix(len(a))
+	c := newMatchupMatrix(len(a))
 
 	for i := 0; i < len(a); i++ {
 		if len(a[i]) != len(b[i]) {
@@ -50,8 +50,8 @@ func AddMatrices(a, b MatchupMatrix) MatchupMatrix {
 
 
 // Takes a flat ranking row (isomorphic to the input CSV) and outputs a matchup matrix in a row-major format.
-func RankRowToMatchupMatrix(rankRow []int, candidateCount int) MatchupMatrix {
-	m := NewMatchupMatrix(candidateCount)
+func rankRowToMatchupMatrix(rankRow []int, candidateCount int) MatchupMatrix {
+	m := newMatchupMatrix(candidateCount)
 
 	for i, ranking := range rankRow {
 		if ranking == 0 {
@@ -74,11 +74,11 @@ func RankRowToMatchupMatrix(rankRow []int, candidateCount int) MatchupMatrix {
 	return m
 }
 
-// PlacementMatrix is a row-major square matrix where row i represents candidate i and column j represents the number of times candidate i came in rank j.
+// PlacementMatrix is a row-major matrix where row i represents candidate i and column j represents the number of times candidate i came in rank j.
 type PlacementMatrix = [][]int
 
 // Slice of length `candidateCount` of slices of of length `candidateCount`. Values in the slice are tne number of placements of each rank that each candidate has.
-func CalculatePlacements(rankRows [][]int, candidateCount int) (placements PlacementMatrix) {
+func calculatePlacements(rankRows [][]int, candidateCount int) (placements PlacementMatrix) {
 	for i := 0; i < candidateCount; i++ {
 		candidateRankings := []int{}
 		for j := 0; j < candidateCount; j++ {
@@ -259,12 +259,30 @@ func scoreSumMatrixInternal(sumMatrix MatchupMatrix, placements PlacementMatrix,
 	}
 }
 
+// Returns:
+// - losers in order from first elimination to last elimination
+// - winners in no particular order
+// - candidates who tied and who have not conclusively won or lost, in no particular order.
+func scoreSumMatrix(sumMatrix MatchupMatrix, placements PlacementMatrix, winnerCount int) (losers []int, winners []int, tied []int) {
+	return scoreSumMatrixInternal(sumMatrix, placements, winnerCount, map[int]bool{}, []int{})
+}
+
 // TODO: Test this function.
 
 // Returns:
 // - losers in order from first elimination to last elimination
 // - winners in no particular order
 // - candidates who tied and who have not conclusively won or lost, in no particular order.
-func ScoreSumMatrix(sumMatrix MatchupMatrix, placements PlacementMatrix, winnerCount int) (losers []int, winners []int, tied []int) {
-	return scoreSumMatrixInternal(sumMatrix, placements, winnerCount, map[int]bool{}, []int{})
+func ScoreRows(rankRows [][]int, winnerCount int) ([]int, []int, []int, MatchupMatrix) {
+	candidateCount := len(rankRows[0])
+	matrixSum := newMatchupMatrix(candidateCount)
+	for _, row := range rankRows {
+		m := rankRowToMatchupMatrix(row, candidateCount)
+		matrixSum = addMatrices(matrixSum, m)
+	}
+
+	placements := calculatePlacements(rankRows, candidateCount)
+
+	losers, winners, tied := scoreSumMatrix(matrixSum, placements, winnerCount)
+	return losers, winners, tied, matrixSum
 }

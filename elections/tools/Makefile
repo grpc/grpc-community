@@ -1,6 +1,6 @@
 ARTIFACTS=tally cmd/.git_hash
 
-GO_SRC=$(shell find cmd pkg -name '*.go')
+GO_SRC=$(shell find cmd pkg -name '*.go' -a -not -name '*_test.go')
 
 .PHONY: all
 all: ${ARTIFACTS}
@@ -14,6 +14,10 @@ cmd/.git_hash:
 tally: ${GO_SRC} go.sum cmd/.git_hash
 	echo ${GO_SRC}
 	go build ./cmd/tally.go
+
+.PHONY: test
+test:
+	go test ./...
 
 .PHONY: clean
 clean:

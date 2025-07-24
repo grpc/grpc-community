@@ -218,15 +218,7 @@ func run(cmd *cobra.Command, args []string) error {
 		return fmt.Errorf("non-compliant csv in %s: %v\n", csvFilename, err)
 	}
 
-	matrixSum := score.NewMatchupMatrix(len(conf.Candidates))
-	for _, row := range rankRows {
-		m := score.RankRowToMatchupMatrix(row, len(conf.Candidates))
-		matrixSum = score.AddMatrices(matrixSum, m)
-	}
-
-	placements := score.CalculatePlacements(rankRows, len(conf.Candidates))
-
-	losers, winners, tie := score.ScoreSumMatrix(matrixSum, placements, conf.WinnerCount)
+	losers, winners, tie, matrixSum := score.ScoreRows(rankRows, conf.WinnerCount)
 
 	md := generateResultsMarkdown(conf.Candidates, len(rankRows), winners, losers, tie, matrixSum)
 	os.WriteFile(outputMarkdownPath, []byte(md), 0666)
