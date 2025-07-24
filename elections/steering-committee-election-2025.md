@@ -30,6 +30,7 @@ same PR as the initial commit of this document.
 | Jung-Yu (Gina) Yeh | [ginayeh](https://github.com/ginayeh) | Google | |
 | Kevin Nilson | [kevinnilson](https://github.com/kevinnilson) | Google | |
 | Craig Tiller | [ctiller](https://github.com/ctiller) | Google | |
+| Nupur Kothari | [nupurkot](https://github.com/nupurkot) | Google | |
 
 ## Procedure
 
