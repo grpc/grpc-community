@@ -1,34 +1,18 @@
+*tallied results for 3 total ballots*
+
 ## Elected Steering Committee
-- Person C
 - Person A
 - Person B
-- Person E
+- Person C
 - Person D
+- Person E
 - Person F
 - Person G
 
-## Instant Run-Off Tiers
-**Place 1**
-- Person C
-
-**Place 2**
-- Person A
-
-**Place 3**
-- Person B
-
-**Place 4**
-- Person E
-
-**Place 5**
-- Person D
-
-**Place 6**
-- Person F
-
-**Place 7**
-- Person G
-
+## Instant Run-Off Elimination
+Candidates were eliminated according to the Condorcet IRV method in the following order:
+- Person I
+- Person H
 
 ## Sum Matrix
 *([definition on Wikipedia](https://en.wikipedia.org/wiki/Condorcet_method#Basic_procedure))*

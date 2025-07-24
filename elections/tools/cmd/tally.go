@@ -5,6 +5,7 @@ import (
 	"encoding/csv"
 	"fmt"
 	"io"
+	"maps"
 	"math"
 	"os"
 	"strconv"
@@ -169,65 +170,201 @@ func rankRowToMatchupMatrix(rankRow []int, candidateCount int) [][]int {
 	return m
 }
 
-// Returns a list of winner tiers and a bool indicating whether or not there was a tie causing a failure of selection.
-func scoreSumMatrixInternal(sumMatrix [][]int, winnerCount int, removedCandidates map[int]bool) ([][]int, bool) {
-	// Candidates with no losses
-	lossCounts := map[int]int{}
-	for i, _ := range sumMatrix {
-		// Don't evaluate loss count for removed candidates.
-		if _, ok := removedCandidates[i]; ok {
+// Slice of length `candidateCount` of slices of of length `candidateCount`. Values in the slice are tne number of placements of each rank that each candidate has.
+func calculatePlacements(rankRows [][]int, candidateCount int) (placements [][]int) {
+	for i := 0; i < candidateCount; i++ {
+		candidateRankings := []int{}
+		for j := 0; j < candidateCount; j++ {
+			candidateRankings = append(candidateRankings, 0)
+		}
+		placements = append(placements, candidateRankings)
+	}
+
+	for _, row := range rankRows {
+		for candidateIndex, ranking := range row {
+			if ranking == 0 {
+				// 0 represents no ranking
+				continue
+			}
+			placements[candidateIndex][ranking-1] += 1
+		}
+	}
+
+	return placements
+}
+
+// Returns the candidates tied for last, in no particular order.
+func leastPreferenceInternal(placements [][]int, candidatesToConsider map[int]bool, place int) []int {
+	if len(candidatesToConsider) == 0 {
+		panic("programming error")
+	}
+
+	if place == len(placements) {
+		// There are no more places to break the tie.
+		panic("programming error")
+	}
+
+	lowestRank := math.MaxInt
+	for candidateIndex := 0; candidateIndex < len(placements); candidateIndex++ {
+		if _, ok := candidatesToConsider[candidateIndex]; !ok {
 			continue
 		}
 
-		losses := 0
-		for j, _ := range sumMatrix {
-			if i == j {
-				continue
-			}
-
-			// Don't consider removed candidates for losses.
-			if _, ok := removedCandidates[j]; ok {
-				continue
-			}
-
-			if sumMatrix[i][j] < sumMatrix[j][i] {
-				losses += 1
-			}
-		}
-		lossCounts[i] = losses
-	}
-
-	minLosses := math.MaxInt
-	for _, lossCount := range lossCounts {
-		if lossCount < minLosses {
-			minLosses = lossCount
+		rankCountForThisCandidate := placements[candidateIndex][place]
+		if rankCountForThisCandidate < lowestRank {
+			lowestRank = rankCountForThisCandidate
 		}
 	}
 
-	tierWinners := []int{}
-	for i, losses := range lossCounts {
-		if losses == minLosses {
-			tierWinners = append(tierWinners, i)
+	lowestCandidates := map[int]bool{}
+	for candidateIndex := 0; candidateIndex < len(placements); candidateIndex++ {
+		if _, ok := candidatesToConsider[candidateIndex]; !ok {
+			continue
+		}
+
+		if placements[candidateIndex][place] == lowestRank {
+			lowestCandidates[candidateIndex] = true
 		}
 	}
 
-	if len(tierWinners) == winnerCount {
-		return [][]int{tierWinners}, false
-	} else if len(tierWinners) < winnerCount {
-		for _, winner := range tierWinners {
-			removedCandidates[winner] = true
+	lowestCandidatesSlice := []int{}
+	for c, _ := range lowestCandidates {
+		lowestCandidatesSlice = append(lowestCandidatesSlice, c)
+	}
+
+	if len(lowestCandidates) == 1 {
+		return lowestCandidatesSlice
+	} else if len(lowestCandidates) > 1 {
+		if place == len(placements)-1 {
+			// There's no more place data to use. Return a tie.
+			return lowestCandidatesSlice
+		} else {
+			// Recur and use the next lowest place.
+			return leastPreferenceInternal(placements, lowestCandidates, place+1)
 		}
-		subResult, err := scoreSumMatrixInternal(sumMatrix, winnerCount-len(tierWinners), removedCandidates)
-		conjointResult := append([][]int{tierWinners}, subResult...)
-		return conjointResult, err
 	} else {
-		return [][]int{tierWinners}, true
+		panic("programming error")
 	}
 }
 
-// Returns winners in tiers
-func scoreSumMatrix(sumMatrix [][]int, winnerCount int) ([][]int, bool) {
-	return scoreSumMatrixInternal(sumMatrix, winnerCount, map[int]bool{})
+// Returns the least preference candidate and whether or not there's been a tie.
+func leastPreference(placements [][]int, removedCandidates map[int]bool) []int {
+	candidatesToConsider := map[int]bool{}
+	for candidateIndex := 0; candidateIndex < len(placements); candidateIndex++ {
+		if _, ok := removedCandidates[candidateIndex]; !ok {
+			candidatesToConsider[candidateIndex] = true
+		}
+	}
+	return leastPreferenceInternal(placements, candidatesToConsider, 0)
+}
+
+// //  Returns:
+// //  - Only when the second return value is false: if a has won true, otherwise false.
+// //  - true if there was a tie
+// func headToHead(sumMatrix [][]int, a, b int) (bool, bool) {
+//
+// }
+
+// Returns
+// - the candidate to eliminate, if tie is not true
+// - whether or not there has been a tie
+func findEliminatee(sumMatrix [][]int, candidates []int) (int, bool) {
+	wins := map[int]int{}
+	for _, c := range candidates {
+		wins[c] = 0
+		for _, o := range candidates {
+			if c == 0 {
+				continue
+			}
+			if sumMatrix[c][o] > sumMatrix[o][c] {
+				wins[c] += 1
+			}
+		}
+	}
+
+	potentialElims := []int{}
+	for _, c := range candidates {
+		if wins[c] == 0 {
+			potentialElims = append(potentialElims, c)
+		}
+	}
+
+	if len(potentialElims) == 1 {
+		return potentialElims[0], false
+	} else {
+		return 0, true
+	}
+}
+
+// Returns:
+// - losers in order from first elimination to last elimination
+// - winners in no particular order
+// - candidates who tied and who have not conclusively won or lost, in no particular order.
+func scoreSumMatrixInternal(sumMatrix [][]int, placements [][]int, winnerCount int, removedCandidates map[int]bool, losers []int) ([]int, []int, []int) {
+	remainderCount := len(sumMatrix) - len(removedCandidates)
+	if remainderCount == winnerCount {
+		winners := []int{}
+		for i := 0; i < len(sumMatrix); i++ {
+			if _, ok := removedCandidates[i]; !ok {
+				winners = append(winners, i)
+			}
+		}
+		return losers, winners, []int{}
+	} else if remainderCount < winnerCount {
+		panic("Eliminated too many candidates")
+	}
+
+	least := leastPreference(placements, removedCandidates)
+	if len(least) < 2 {
+		additionalRemoved := map[int]bool{}
+		maps.Copy(additionalRemoved, removedCandidates)
+		for _, loser := range least {
+			additionalRemoved[loser] = true
+		}
+		least = append(least, leastPreference(placements, additionalRemoved)...)
+	}
+
+	// `least` now has at least two candidates in consideration
+	// eliminate the one that loses in a head-to-head match-up
+	// unless there's a cycle, in which case, there's a tie
+
+	e, tie := findEliminatee(sumMatrix, least)
+	if tie {
+		if len(sumMatrix)-len(removedCandidates)-len(least) >= winnerCount {
+			// If the choice of which one of these to eliminate doesn't affect the overall result, we can eliminate them all.
+			for c, _ := range least {
+				losers = append(losers, c)
+				removedCandidates[c] = true
+			}
+			return scoreSumMatrixInternal(sumMatrix, placements, winnerCount, removedCandidates, losers)
+		} else {
+			// This is a tie.
+			winners := []int{}
+			for c := 0; c < len(sumMatrix); c++ {
+				if _, ok := removedCandidates[c]; !ok {
+					winners = append(winners, c)
+				}
+			}
+			tied := []int{}
+			for c, _ := range least {
+				tied = append(tied, c)
+			}
+			return losers, winners, tied
+		}
+	} else {
+		// We have a single definitive candidate to eliminate.
+		removedCandidates[e] = true
+		losers = append(losers, e)
+		return scoreSumMatrixInternal(sumMatrix, placements, winnerCount, removedCandidates, losers)
+	}
+}
+
+// Returns:
+// - losers in order from first elimination to last elimination
+// - winners in no particular order
+// - candidates who tied and who have not conclusively won or lost, in no particular order.
+func scoreSumMatrix(sumMatrix [][]int, placements [][]int, winnerCount int) (losers []int, winners []int, tied []int) {
+	return scoreSumMatrixInternal(sumMatrix, placements, winnerCount, map[int]bool{}, []int{})
 }
 
 var rootCommand = &cobra.Command{
@@ -244,43 +381,45 @@ Arguments:
 var outputMarkdownPath string
 var configFilePath string
 
-func generateResultsMarkdown(candidates []string, winnerTiers [][]int, tie bool, sumMatrix [][]int) string {
+func generateResultsMarkdown(candidates []string, responseCount int, winners, losers, tie []int, sumMatrix [][]int) string {
 	var sb strings.Builder
 
-	// TODO: Implement tied results.
-	if tie {
-		fmt.Fprintf(os.Stderr, "tie not yet implemented\n")
-		os.Exit(1)
-	}
+	sb.WriteString(fmt.Sprintf("*tallied results for %d total ballots*\n\n", responseCount))
 
-	flattenedWinners := []int{}
-	for _, tier := range winnerTiers {
-		flattenedWinners = append(flattenedWinners, tier...)
-	}
+	if len(tie) > 0 {
+		sb.WriteString("This election has resulted in a **tie**. A revote must be held with the eliminated candidates excluded.\n\n")
 
-	// TODO: Response count.
-
-	sb.WriteString("## Elected Steering Committee\n")
-
-	for _, candidateIndex := range flattenedWinners {
-		sb.WriteString(fmt.Sprintf("- %s\n", candidates[candidateIndex]))
-	}
-	sb.WriteString("\n")
-
-	// TODO: Extend the output tiers to include _everyone_ including those who didn't win.
-	sb.WriteString("## Instant Run-Off Tiers\n")
-	for i, tier := range winnerTiers {
-		if len(tier) > 1 {
-			sb.WriteString(fmt.Sprintf("**Tied for Place %d**\n", i+1))
-		} else {
-			sb.WriteString(fmt.Sprintf("**Place %d**\n", i+1))
+		sb.WriteString("## Candidates Eligible for Re-vote\n")
+		for _, c := range winners {
+			sb.WriteString(fmt.Sprintf("- %s\n", candidates[c]))
 		}
-		for _, candidateIndex := range tier {
+		for _, c := range tie {
+			sb.WriteString(fmt.Sprintf("- %s\n", candidates[c]))
+		}
+		sb.WriteString("\n")
+
+		sb.WriteString("## Eliminated Candidates\n")
+		for _, loser := range losers {
+			sb.WriteString(fmt.Sprintf("- %s\n", candidates[loser]))
+		}
+		sb.WriteString("\n")
+	} else {
+
+		sb.WriteString("## Elected Steering Committee\n")
+
+		for _, candidateIndex := range winners {
 			sb.WriteString(fmt.Sprintf("- %s\n", candidates[candidateIndex]))
 		}
 		sb.WriteString("\n")
+
+		sb.WriteString("## Instant Run-Off Elimination\n")
+		sb.WriteString("Candidates were eliminated according to the Condorcet IRV method in the following order:\n")
+		for _, loser := range losers {
+			sb.WriteString(fmt.Sprintf("- %s\n", candidates[loser]))
+		}
+
+		sb.WriteString("\n")
 	}
-	sb.WriteString("\n")
 
 	sb.WriteString("## Sum Matrix\n")
 	sb.WriteString("*([definition on Wikipedia](https://en.wikipedia.org/wiki/Condorcet_method#Basic_procedure))*\n")
@@ -347,17 +486,16 @@ func run(cmd *cobra.Command, args []string) error {
 		matrixSum = addMatrices(matrixSum, m)
 	}
 
-	// fmt.Printf("scoring matrix: %v\n", matrixSum)
+	placements := calculatePlacements(rankRows, len(conf.Candidates))
 
 	// TODO: Test this function.
-	// TODO: output the sum matrix to a markdown file.
-	winners, tie := scoreSumMatrix(matrixSum, conf.WinnerCount)
-	if tie {
-		fmt.Fprintf(os.Stderr, "tie: %v\n", winners)
-		os.Exit(1)
-	}
+	losers, winners, tie := scoreSumMatrix(matrixSum, placements, conf.WinnerCount)
 
-	md := generateResultsMarkdown(conf.Candidates, winners, tie, matrixSum)
+	fmt.Printf("Winners: %v\n", winners)
+	fmt.Printf("Losers: %v\n", losers)
+	fmt.Printf("Tie: %v\n", tie)
+
+	md := generateResultsMarkdown(conf.Candidates, len(rankRows), winners, losers, tie, matrixSum)
 	os.WriteFile(outputMarkdownPath, []byte(md), 0666)
 	fmt.Printf("Wrote %s\n", outputMarkdownPath)
 

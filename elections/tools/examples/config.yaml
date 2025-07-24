@@ -1,13 +1,15 @@
+# The number of header rows to ignore for tallying.
 headerRows: 1
 
 # The number of columns before rank data starts on each row.
 prefixColCount: 1
 
+# The number of columsn after the rank data on each row.
+suffixColCount: 1
+
 # The number of winners to be selected from the candidatesj
 winnerCount: 7
 
-# The number of columsn after the rank data on each row.
-suffixColCount: 1
 candidates:
   - Person A
   - Person B
