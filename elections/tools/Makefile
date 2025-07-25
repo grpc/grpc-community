@@ -19,6 +19,10 @@ tally: ${GO_SRC} go.sum cmd/.git_hash
 test:
 	go test ./...
 
+.PHONY: fuzz
+fuzz:
+	go test -v -fuzz=Fuzz ./pkg/score/
+
 .PHONY: clean
 clean:
 	rm -f ${ARTIFACTS}

@@ -2,8 +2,10 @@ package score
 
 import (
 	"fmt"
-	"math"
 	"maps"
+	"math"
+
+	"cmp"
 )
 
 // A row-major square matrix representing a match-up between two or more candidates.
@@ -47,7 +49,6 @@ func addMatrices(a, b MatchupMatrix) MatchupMatrix {
 
 	return c
 }
-
 
 // Takes a flat ranking row (isomorphic to the input CSV) and outputs a matchup matrix in a row-major format.
 func rankRowToMatchupMatrix(rankRow []int, candidateCount int) MatchupMatrix {
@@ -165,6 +166,15 @@ func leastPreference(placements PlacementMatrix, removedCandidates map[int]bool)
 	return leastPreferenceInternal(placements, candidatesToConsider, 0)
 }
 
+// Returns:
+//
+//	-1 if a loses to b
+//	1 if a wins against b
+//	0 if there is a tie
+func beats(sumMatrix MatchupMatrix, a, b int) int {
+	return cmp.Compare(sumMatrix[a][b], sumMatrix[b][a])
+}
+
 // Returns
 // - the candidate to eliminate, if tie is not true
 // - whether or not there has been a tie
@@ -173,10 +183,10 @@ func findEliminatee(sumMatrix MatchupMatrix, candidates []int) (int, bool) {
 	for _, c := range candidates {
 		wins[c] = 0
 		for _, o := range candidates {
-			if c == 0 {
+			if c == o {
 				continue
 			}
-			if sumMatrix[c][o] > sumMatrix[o][c] {
+			if beats(sumMatrix, c, o) == 1 {
 				wins[c] += 1
 			}
 		}
@@ -229,20 +239,30 @@ func scoreSumMatrixInternal(sumMatrix MatchupMatrix, placements PlacementMatrix,
 	// unless there's a cycle, in which case, there's a tie
 
 	e, tie := findEliminatee(sumMatrix, least)
+
 	if tie {
 		if len(sumMatrix)-len(removedCandidates)-len(least) >= winnerCount {
 			// If the choice of which one of these to eliminate doesn't affect the overall result, we can eliminate them all.
-			for c, _ := range least {
+			for _, c := range least {
 				losers = append(losers, c)
 				removedCandidates[c] = true
 			}
 			return scoreSumMatrixInternal(sumMatrix, placements, winnerCount, removedCandidates, losers)
 		} else {
+			// TODO: This section is probably too deeply nested now.
 			// This is a tie.
 			winners := []int{}
 			for c := 0; c < len(sumMatrix); c++ {
 				if _, ok := removedCandidates[c]; !ok {
-					winners = append(winners, c)
+					isTie := false
+					for _, l := range least {
+						if c == l {
+							isTie = true
+						}
+					}
+					if !isTie {
+						winners = append(winners, c)
+					}
 				}
 			}
 			tied := []int{}
