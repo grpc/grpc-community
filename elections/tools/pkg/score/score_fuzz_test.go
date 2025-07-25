@@ -196,10 +196,5 @@ func FuzzScoreRows(f *testing.F) {
 				oldLosers = losers
 			})
 		}
-
-		// To test:
-		// x The winners, losers, and tie always sum to the candidates
-		// - When decreasing the winner count, the new losers are always a superset of the old ones.
-		// - The intersection of the Smith set and the losers is always null
 	})
 }
