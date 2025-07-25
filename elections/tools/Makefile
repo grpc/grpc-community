@@ -23,6 +23,14 @@ test:
 fuzz:
 	go test -v -fuzz=Fuzz ./pkg/score/
 
+.PHONY: fuzztimed
+fuzztimed:
+	go test -v -fuzz=Fuzz -fuzztime=60s ./pkg/score/
+
+.PHONY: fmt
+fmt:
+	go fmt ./...
+
 .PHONY: clean
 clean:
 	rm -f ${ARTIFACTS}

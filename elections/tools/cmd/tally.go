@@ -152,6 +152,11 @@ func generateResultsMarkdown(candidates []string, responseCount int, winners, lo
 
 		sb.WriteString("## Instant Run-Off Elimination\n")
 		sb.WriteString("Candidates were eliminated according to the Condorcet IRV method in the following order:\n")
+
+		if len(losers) == 0 {
+			sb.WriteString("\n*no candidates were eliminated*\n")
+		}
+
 		for _, loser := range losers {
 			sb.WriteString(fmt.Sprintf("- %s\n", candidates[loser]))
 		}

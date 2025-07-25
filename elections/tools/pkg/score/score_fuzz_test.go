@@ -56,7 +56,7 @@ func lehmerCodeToRow(lehmer int, elementCount int) []int {
 }
 
 func rowEncodingToRows(rowEncoding []byte, numCandidates, numVoters int) [][]int {
-	// We'll draw `numVoters` permutations from the byte slice. If there are no remaining bytes, we will assume the next row is a 0.
+	// We draw `numVoters` permutations from the byte slice. If there are no remaining bytes, we will assume the next row is a 0.
 	// Each row will be a Lehmer Code represented by ceil(ceil(log_2(numCandidates!)) / 8) bytes.
 
 	// So we will draw no more than numVoters * ceil(ceil(log_2(numCandidates!)) / 8) bytes from the slice.
