@@ -8,6 +8,7 @@ are considered Organization Members as well.
 
 | Name | Github Handle | Employer |
 |--|--|--|
+| Abhishek Agrawal | [AgraVator](https://github.com/AgraVator) | Google |
 | Aditya Mandaleeka | [adityamandaleeka](https://github.com/adityamandaleeka) | Microsoft |
 | Andrew Casey | [amcasey](https://github.com/amcasey) | Microsoft |
 | Anirudh Ramachandra | [anicr7](https://github.com/anicr7) | Google |
