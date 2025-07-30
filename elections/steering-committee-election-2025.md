@@ -31,7 +31,6 @@ same PR as the initial commit of this document.
 | Kevin Nilson | [kevinnilson](https://github.com/kevinnilson) | Google | |
 | Craig Tiller | [ctiller](https://github.com/ctiller) | Google | |
 | Nupur Kothari | [nupurkot](https://github.com/nupurkot) | Google | |
-| Ashish Srivastava | [ashishksrivastava](https://github.com/ashishksrivastava) | Google | |
 
 ## Procedure
 
