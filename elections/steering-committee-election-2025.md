@@ -7,8 +7,7 @@
 - Voting Opens: 2025-08-01 12:01AM Pacific
 - Voting Ends: 2025-08-06 11:59PM Pacific
 - Positions Take Effect: 2025-08-15 12:01AM Pacific
-- Voting form: **To be added after nominations conclude**
-- [Sample Ballot](https://forms.gle/T7bxn3sWiAb4eaUU6)
+- [Voting form](https://forms.gle/nEAwqhUrp414iF579)
 
 ## Introduction
 
@@ -51,8 +50,7 @@ Candidate nomination will open on 2025-07-23 at 12:01AM Pacific and end on
 
 All project [Maintainers](../contributor_ladder.md#maintainer) are eligible to
 vote, with the roster captured [here](contributors/maintainers.md). Voting will
-be conducted via Google Forms. The official form will be created after
-nominations are concluded, but a sample ballot is provided [here](https://forms.gle/T7bxn3sWiAb4eaUU6).
+be conducted via Google Forms at [this link](https://forms.gle/nEAwqhUrp414iF579).
 
 After voting has concluded, the Election Officer(s) will tally the results with
 the IRV method and announce them by updating this document with the results and
