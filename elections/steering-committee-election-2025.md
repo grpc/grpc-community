@@ -8,6 +8,7 @@
 - Voting Ends: 2025-08-06 11:59PM Pacific
 - Positions Take Effect: 2025-08-15 12:01AM Pacific
 - [Voting form](https://forms.gle/nEAwqhUrp414iF579)
+- Current Election Status: Complete
 
 ## Introduction
 
@@ -58,7 +59,30 @@ posting to [the grpc-io mailing list](https://groups.google.com/g/grpc-io).
 
 ## Results
 
-**To be filled in after voting has concluded**
+*tallied results for 5 total ballots*
 
-| Name | Github Handle | Employer | Vote Ranking |
-|--|--|--|--|
+### Elected Steering Committee
+- Mark Roth
+- Antoine Tollenaere
+- April Kyle Nassi
+- Jung-Yu (Gina) Yeh
+- Kevin Nilson
+- Craig Tiller
+- Nupur Kothari
+
+### Instant Run-Off Elimination
+Candidates were eliminated according to the Condorcet IRV method in the following order:
+
+*no candidates were eliminated*
+
+### Sum Matrix
+*([definition on Wikipedia](https://en.wikipedia.org/wiki/Condorcet_method#Basic_procedure))*
+| | Mark Roth | Antoine Tollenaere | April Kyle Nassi | Jung-Yu (Gina) Yeh | Kevin Nilson | Craig Tiller | Nupur Kothari |
+| -- | -- | -- | -- | -- | -- | -- | -- |
+| **Mark Roth** | 0 | 2 | 4 | 3 | 3 | 2 | 3 |
+| **Antoine Tollenaere** | 3 | 0 | 4 | 3 | 4 | 2 | 3 |
+| **April Kyle Nassi** | 1 | 1 | 0 | 2 | 2 | 0 | 3 |
+| **Jung-Yu (Gina) Yeh** | 2 | 2 | 3 | 0 | 1 | 1 | 3 |
+| **Kevin Nilson** | 2 | 1 | 3 | 4 | 0 | 2 | 4 |
+| **Craig Tiller** | 3 | 3 | 5 | 4 | 3 | 0 | 5 |
+| **Nupur Kothari** | 2 | 2 | 2 | 2 | 1 | 0 | 0 |
