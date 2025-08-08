@@ -98,10 +98,15 @@ employer.
 The current membership of the committee is (listed alphabetically by
 first name):
 
-| &nbsp;                                                         | Member           | Organization |
-| -------------------------------------------------------------- | ---------------- | ------------ |
-** TO BE FILLED IN AFTER THE FIRST ELECTION **
-
+| Member           | Organization |
+| ---------------- | ------------ |
+| Antoine Tollenaere | Datadog |
+| April Kyle Nassi | Google |
+| Craig Tiller | Google |
+| Jung-Yu (Gina) Yeh | Google |
+| Kevin Nilson | Google |
+| Mark Roth | Google |
+| Nupur Kothari | Google |
 
 ### Decision process
 
