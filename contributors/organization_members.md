@@ -11,6 +11,7 @@ are considered Organization Members as well.
 | Aananth V | [aananthv](https://github.com/aananthv) | Google |
 | Abhishek Agrawal | [AgraVator](https://github.com/AgraVator) | Google |
 | Aditya Mandaleeka | [adityamandaleeka](https://github.com/adityamandaleeka) | Microsoft |
+| Ana Salazar Maldonado | [anniefrchz](https://github.com/anniefrchz) | Google |
 | Andrew Casey | [amcasey](https://github.com/amcasey) | Microsoft |
 | Anirudh Ramachandra | [anicr7](https://github.com/anicr7) | Google |
 | April Kyle Nassi | [thisisnotapril](https://github.com/thisisnotapril) | Google |
