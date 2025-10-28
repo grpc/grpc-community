@@ -8,7 +8,6 @@ are considered Organization Members as well.
 
 | Name | Github Handle | Employer |
 |--|--|--|
-| Aananth V | [aananthv](https://github.com/aananthv) | Google |
 | Abhishek Agrawal | [AgraVator](https://github.com/AgraVator) | Google |
 | Aditya Mandaleeka | [adityamandaleeka](https://github.com/adityamandaleeka) | Microsoft |
 | Ana Salazar Maldonado | [anniefrchz](https://github.com/anniefrchz) | Google |
