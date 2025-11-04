@@ -19,6 +19,7 @@ sorted alphabetically by first name.
 | Michael Lumish | [murgatroid99](https://github.com/murgatroid99) | Node.js | [grpc-node](https://github.com/grpc/grpc-node) | Google | 
 | Nupur Kothari | [nupurkot](https://github.com/nupurkot) | C++, Java, Python | [grpc](https://github.com/grpc/grpc), [grpc-java](https://github.com/grpc/grpc-java) | Google | 
 | Richard Belleville | [gnossen](https://github.com/gnossen) | Python | [grpc](https://github.com/grpc/grpc) | Google |
+| Sergii Tkachenko | [sergiitk](https://github.com/sergiitk) | Python, xDS Interop | [grpc](https://github.com/grpc/grpc), [psm-interop](https://github.com/grpc/psm-interop) | Google |
 
 ## Emeritus Maintainers
 

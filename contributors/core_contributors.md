@@ -30,7 +30,6 @@ as well.
 | Patrice Chalin | [chalin](https://github.com/chalin) | grpc.io | [grpc.io](https://github.com/grpc/grpc.io) | CNCF |
 | Paulo Castello da Costa | [paulosjca](https://github.com/paulosjca) | Benchmarking | [test-infra](https://github.com/grpc/test-infra) | Google |
 | Pawan Bhardwaj | [pawbhard](https://github.com/pawbhard) | Core/C++ | [grpc](https://github.com/grpc/grpc) | Google |
-| Sergii Tkachenko | [sergiitk](https://github.com/sergiitk) | Python, xDS Interop | [grpc](https://github.com/grpc/grpc), [psm-interop](https://github.com/grpc/psm-interop) | Google |
 | Stanley Cheung | [stanley-cheung](https://github.com/stanley-cheung) | PHP | [grpc](https://github.com/grpc/grpc) | Google | 
 | Terry Wilson | [temawi](https://github.com/temawi) | Android | [grpc-java](https://github.com/grpc/grpc-java) | Google | 
 | Tanvi Jagtap | [tanvi-jagtap](https://github.com/tanvi-jagtap) | Core/C++ | [grpc](https://github.com/grpc/grpc) | Google | 
