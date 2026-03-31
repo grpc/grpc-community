@@ -21,7 +21,7 @@ The gRPC developers and community are expected to follow the values defined in t
 ## Decision Making And Voting
 
 gRPC is an open-source [project / organization](https://github.com/grpc/) with an
-open collaboration philosophy. This means that the Github project is the source
+open collaboration philosophy. This means that the GitHub project is the source
 of truth for every aspect of the project, including its philosophy, design, road
 map, and APIs. *If it's part of the project, it's in the repos. If it's in the
 repos, it's part of the project.*
