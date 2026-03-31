@@ -5,7 +5,7 @@ This is the authoritative listing of
 sorted alphabetically by first name.
 
 
-| Name | Github Handle | Area(s) of Expertise | Repo(s) | Employer | 
+| Name | GitHub Handle | Area(s) of Expertise | Repo(s) | Employer | 
 |--|--|--|--|--|
 | Antoine Tollenaere | [atollena](https://github.com/atollena) | Go | [grpc-go](https://github.com/grpc/grpc-go) | Datadog |
 | Craig Tiller | [ctiller](https://github.com/ctiller) | C++ | [grpc](https://github.com/grpc/grpc) | Google |
@@ -23,5 +23,5 @@ sorted alphabetically by first name.
 
 ## Emeritus Maintainers
 
-| Name | Github Handle | Area(s) of Expertise | Repo(s) | Employer | 
+| Name | GitHub Handle | Area(s) of Expertise | Repo(s) | Employer | 
 |--|--|--|--|--|

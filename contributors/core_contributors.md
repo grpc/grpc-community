@@ -8,7 +8,7 @@ listed here, all [Maintainers](maintainers.md) are considered Core Contributors
 as well.
 
 
-| Name | Github Handle | Area(s) of Expertise | Repo(s) | Employer | 
+| Name | GitHub Handle | Area(s) of Expertise | Repo(s) | Employer | 
 |--|--|--|--|--|
 | Aananth V | [aananthv](https://github.com/aananthv) | Core/C++ | [grpc](https://github.com/grpc/grpc) | Google |
 | Adam Heller | [drfloob](https://github.com/drfloob) | Core/C++, EventEngine | [grpc](https://github.com/grpc/grpc) | Google |
@@ -40,5 +40,5 @@ as well.
 
 ## Emeritus Core Contributors
 
-| Name | Github Handle | Area(s) of Expertise | Repo(s) | Employer | 
+| Name | GitHub Handle | Area(s) of Expertise | Repo(s) | Employer | 
 |--|--|--|--|--|
