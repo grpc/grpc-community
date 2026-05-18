@@ -24,7 +24,7 @@ as well.
 | Ivy (Yifei) Zhuang | [yifeizhuang](https://github.com/yifeizhuang) | Java | [grpc-java](https://github.com/grpc/grpc-java) | Google | 
 | John Cormie | [jdcormie](https://github.com/jdcormie) | Android Binder | [grpc-java](https://github.com/grpc/grpc-java) | Google |
 | Kannan Jayprakasam | [kannanjgithub](https://github.com/kannanjgithub) | Java, xDS Interop, Benchmarking | [grpc-java](https://github.com/grpc/grpc-java), [psm-interop](https://github.com/grpc/psm-interop), [test-infra](https://github.com/grpc/test-infra) | Google |
-| Lucio Franco | [LucioFranco](https://github.com/LucioFranco) | Rust | [hyperium/tonic](https://github.com/hyperium/tonic) | Turso | 
+| Lucio Franco | [LucioFranco](https://github.com/LucioFranco) | Rust | [hyperium/tonic](https://github.com/hyperium/tonic) | Independent | 
 | Luwei Ge | [rockspore](https://github.com/rockspore) | Security (cross-language) | [grpc](https://github.com/grpc/grpc), [grpc-go](https://github.com/grpc/grpc-go), [grpc-java](https://github.com/grpc/grpc-java) | Google |
 | Matthew Stevenson | [matthewstevenson88](https://github.com/matthewstevenson88) | Security (cross-language) | [grpc](https://github.com/grpc/grpc), [grpc-go](https://github.com/grpc/grpc-go), [grpc-java](https://github.com/grpc/grpc-java) | Google |
 | Patrice Chalin | [chalin](https://github.com/chalin) | grpc.io | [grpc.io](https://github.com/grpc/grpc.io) | CNCF |
