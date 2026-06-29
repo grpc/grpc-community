@@ -214,8 +214,8 @@
             proxy of any kind.
       * **Observability (OpenTelemetry, Prometheus):**
           * gRPC provides [first-party integration with
-            OpenTelemetry](https://grpc.io/docs/guides/opentelemetry-metrics/). This allows gRPC signals (such as
-            metrics and logs) to be exported in the standard, vendor-neutral
+            OpenTelemetry](https://grpc.io/docs/guides/opentelemetry-metrics/). This allows gRPC signals to be exported
+	    in the standard, vendor-neutral
             [OTLP](https://opentelemetry.io/docs/specs/otel/protocol/) format to any compatible backend (e.g.,
             Prometheus, Datadog, Jaeger).
       * **API Gateways (like Envoy, Kong, and `grpc-gateway`):**
@@ -301,7 +301,7 @@
             provides mTLS transparently.
           * **Resilience:** Configuring sensible default deadlines  and retry policies.
           * **Scalability:** Configuring client-side load balancing (e.g., `round_robin` or more advanced policies via xDS).
-          * **Observability:** Enabling OpenTelemetry support  and registering the `grpc.health.v1` service.
+          * **Observability:** Enabling OpenTelemetry support  and registering the `grpc.health.v1.Health` service.
           * **Security (Hardening):** Disabling server reflection, which is useful for debugging but can be a security
             risk in production as it exposes the entire API schema.
 
@@ -596,7 +596,7 @@
         vulnerabilities.
       * **Major Releases:** These are extremely rare and are only permitted for significant, necessary API-breaking
         changes (e.g., fixing a security flaw, adapting to a language-ecosystem break). They require a formal gRFC and,
-        as stated, *must not* break wire protocol compatibility. To this point, C# is the only implementation that has
+        as stated, *must not* break wire protocol compatibility. To this point, .Net is the only implementation that has
         performed a major version bump beyond `v1.x`.
 
 ### Installation
@@ -608,10 +608,10 @@
 
       * Installation Examples:
 
-          * Go: `go install google.golang.org/protobuf/cmd/protoc-gen-go@latest google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest`
+          * Go: `go get google.golang.org/grpc && go install google.golang.org/protobuf/cmd/protoc-gen-go@latest google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest`
           * Python: `pip install grpcio grpcio-tools`
           * Java (Gradle): Adding `grpc-netty-shaded`, `grpc-protobuf`, and `grpc-stub` to `dependencies` in `build.gradle`.
-          * C++: Requires building from source using `cmake`.
+          * C++: Requires building from source using `cmake` or Bazel.
 
       * Basic Initialization: A minimal server or client can be initialized in just a few lines of code. This looks
         roughly the same across all languages:
@@ -805,8 +805,7 @@
         repos:
 
         * Every PR must be reviewed by at least 1 contributor before eligibility for merge (the four eyes principle)
-        * A comprehensive suite of pre-submit tests must pass on the change before eligibility for merge, often
-          including fuzz testing
+        * A comprehensive suite of pre-submit tests must pass on the change before eligibility for merge.
         * The `main` / `master` branches and all active release branches are branch-protected
         * All third-party runtime dependencies are verified at least by hash (though gRPC's dependency list is
           intentionally kept quite small)
@@ -899,7 +898,7 @@
 
       * `sum(increase(grpc_server_call_duration_count{grpc_status="UNIMPLEMENTED"}[1h]))`
       * `sum(increase(grpc_server_call_duration_count{grpc_status="INVALID_ARGUMENT"}[1h]))`
-      * `sum(increase(grpc_server_call_duration_count{grpc_status="UNKNOWN"}[1h]))`
+      * `sum(increase(grpc_server_call_duration_count{grpc_status="INTERNAL"}[1h]))`
 
   * **Explain how upgrades and rollbacks were tested and how the upgrade-\>downgrade-\>upgrade path was tested.**
 
@@ -917,7 +916,7 @@
     We designate "alpha/beta" capabilities by marking functions, methods, classes, etc. "experimental." The exact method
     of marking an API experimental differs from language to language. But at a minimum, the documentation for that API
     will indicate that it is experimental. In cases where there are native language-level mechanisms for marking an API
-    experimental ([as is the case in Java](https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html)), that
+    experimental ([as is the case in Java](https://github.com/grpc/grpc-java-api-checker)), that
     mechanism is used.
 
 ## Day 2 - Day-to-Day Operations Phase
