@@ -9,6 +9,29 @@ For contributions not related to gRPC design and implementation but useful to gR
 ## Legal Requirements
 In order to protect both you and the gRPC project, you will need to sign the CNCF [Contributor License Agreement](https://identity.linuxfoundation.org/projects/cncf) before your PR can be merged.
 
+## Generative AI Policy
+
+AI tools have the ability to produce more code than is possible for the gRPC
+team to read, understand, review, and accept into the repository.  For this
+reason, we request that all contributions adhere to the following rules:
+
+1. **No AI-Generated Interactions:** All communication in the repo must be
+   authored by a human.  _Exception: AIs may be used for directed writing
+   assistance or translation._  Absolutely no automated agents are allowed to
+   directly publish to GitHub.
+
+2. **Author Ownership and Accountability:** Code contributions are expected to
+   be fully owned and understood by the human contributor.  If the code was
+   produced by generative AI, the author is expected to have reviewed and
+   understood it in its entirety before submitting it for review.  This includes
+   all content: production code, tests, examples, tools, etc.
+
+In addition to the above requirements, any AI-assisted contributions must also
+comply with the [Linux Foundation Generative AI
+Policy](https://www.linuxfoundation.org/legal/generative-ai).  This includes
+confirming that all contributions are legally allowed to be contributed to the
+gRPC project under the applicable license terms.
+
 ## Communication
 
 Trivial changes and small bug fixes do not need prior communication. You can just submit a PR with minimum details. For larger PRs, we ask that before contributing, please make the effort to coordinate with the maintainers of the project via a Github issue or via [grpcio](https://groups.google.com/forum/#!forum/grpc-io) mailing list. This will prevent you from doing extra or redundant work that may or may not be merged.
