@@ -19,7 +19,7 @@ as well.
 | Daniel Liu | [danielzhaotongliu](https://github.com/danielzhaotongliu) | Core/C++ | [grpc](https://github.com/grpc/grpc) | Google |
 | Easwar Swaminathan | [easwars](https://github.com/easwars) | xDS (Golang) | [grpc-go](https://github.com/grpc/grpc-go) | Google | 
 | Eryu Xia | [sampajano](https://github.com/sampajano) | iOS | [grpc](https://github.com/grpc/grpc) | Google | 
-| Gregory Cooke | [gtcooke94](https://github.com/gtcooke94) | Security (cross-language) | [grpc](https://github.com/grpc/grpc), [grpc-go](https://github.com/grpc/grpc-go), [grpc-java](https://github.com/grpc/grpc-java) | Google |
+| Gregory Cooke | [gtcooke94](https://github.com/gtcooke94) | Security (cross-language), Python | [grpc](https://github.com/grpc/grpc), [grpc-go](https://github.com/grpc/grpc-go), [grpc-java](https://github.com/grpc/grpc-java) | Google |
 | Gus Cairo | [gjcairo](https://github.com/gjcairo) | Swift | [grpc-swift](https://github.com/grpc/grpc-swift) | Apple |
 | Ivy (Yifei) Zhuang | [yifeizhuang](https://github.com/yifeizhuang) | Java | [grpc-java](https://github.com/grpc/grpc-java) | Google | 
 | John Cormie | [jdcormie](https://github.com/jdcormie) | Android Binder | [grpc-java](https://github.com/grpc/grpc-java) | Google |
