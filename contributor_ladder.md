@@ -198,7 +198,7 @@ Process of becoming a maintainer:
 It is important for contributors to remain active to set an example and show commitment to the project. Inactivity is harmful to the project as it may lead to unexpected delays, contributor attrition, and a loss of trust in the project.
 
 * Inactivity is measured by:
-    * Periods of no contributions for longer than 6 months, including Github comments, PRs, and issues.
+    * Periods of no contributions for longer than 6 months, including GitHub comments, PRs, and issues.
     * Periods of no communication for longer than 6 months, including emails, messages, and attendance at project meetings.
 * Consequences of being inactive include:
     * Involuntary removal or demotion

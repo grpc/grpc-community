@@ -6,7 +6,7 @@ sorted alphabetically by first name. In addition to all of the individuals
 listed here, all [Core Contributors](core_contributors.md) and [Maintainers](maintainers.md)
 are considered Organization Members as well.
 
-| Name | Github Handle | Employer |
+| Name | GitHub Handle | Employer |
 |--|--|--|
 | Abhishek Agrawal | [AgraVator](https://github.com/AgraVator) | Google |
 | Aditya Mandaleeka | [adityamandaleeka](https://github.com/adityamandaleeka) | Microsoft |
@@ -54,5 +54,5 @@ are considered Organization Members as well.
 
 ## Emeritus Organization Members
 
-| Name | Github Handle | Employer |
+| Name | GitHub Handle | Employer |
 |--|--|--|
